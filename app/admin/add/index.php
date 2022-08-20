@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="../assets/boxicons/css/boxicons.css">
 </head>
 <body>
+   
 <img class="wave" src="../assets/img/wave.png" alt="">
     <div class="container">
         <div class="img">
             <img src="../assets/img/bg.svg" alt="">
         </div>
      <div class="container_content"> 
-        <form action="login.php" method="POST">
+        <form action="../register.php" method="POST">
             <img src="../assets/img/avatar.svg" alt="">
             <h2 class="main_text">Register</h2>
             <div class="container_input">
@@ -44,15 +45,15 @@
            </div>
            <div class="container_checkbox">
                 <div class="checkbox1">
-                    <input  type="checkbox">
+                    <input  type="checkbox" name="level" value="admin">
                     <label for="">Admin</label>
                 </div>
-                <div class="checkbox2">
-                <input  type="checkbox">
+                <div class="checkbox2" >
+                <input  type="checkbox" name="level" value="walas">
                     <label for="">Walas</label>
                 </div>
                 <div class="checkbox3">
-                <input  type="checkbox">
+                <input  type="checkbox" name="level" value="gr-piket">
                     <label for="">Guru-Piket</label>
                 </div>
            </div>
