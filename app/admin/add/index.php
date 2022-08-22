@@ -46,15 +46,15 @@
            <div class="container_checkbox">
                 <div class="checkbox1">
                     <input  type="checkbox" name="level" value="admin">
-                    <label for="">Admin</label>
+                    <label >Admin</label>
                 </div>
                 <div class="checkbox2" >
                 <input  type="checkbox" name="level" value="walas">
-                    <label for="">Walas</label>
+                    <label >Walas</label>
                 </div>
                 <div class="checkbox3">
                 <input  type="checkbox" name="level" value="gr-piket">
-                    <label for="">Guru-Piket</label>
+                    <label >Guru-Piket</label>
                 </div>
            </div>
            <a href="../index.php" class="forgot">Back to dashboard?</a>

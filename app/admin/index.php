@@ -12,19 +12,20 @@
   <?php include 'header.php';
   include '../koneksi.php'
   ?>
+
   <div class="container">
-    <div class="user_container">
+    <div class="table_container">
       <table class="table">
-      <thead>
+       <thead>
         <tr>
           <th>Password</th>
           <th>Username</th>
-          <!-- <th></th> -->
           <th>Level</th>
           <th>Action</th>
         </tr> 
-      </thead>
-      <tbody><?php 
+       </thead>
+        <tbody>
+          <?php 
         $login = mysqli_query($koneksi,"select * from t_user");
         while($d = mysqli_fetch_array($login)){
         ?>
@@ -32,16 +33,20 @@
           <td><?php echo $d['password']; ?> </td>
           <td><?php echo $d['username']; ?></td>
           <td><?php echo $d['level']; ?></td>
-          <td>
-          <a href="edit.php?=<?php echo $d['username'] ?>" class="button">Edit</a>
-          <a href="delete.php?=<?php echo $d['username'] ?>" class="button">Delete</a>
+          <td class="d-flex edit">
+            <a href="edit.php?=<?php echo $d['username'] ?>" class="button">Edit</a>
+            <a href="delete.php?id=<?php echo $d['username'] ?>" class="button">Delete</a>
           </td>
-        </tr>
+        </tr> 
         <?php 
         }
-        ?></tbody>
+        ?>
+        </tbody>
        
       </table>
+    </div>
+    <div class="edit_container">
+     
     </div>
   </div>
 </body>
