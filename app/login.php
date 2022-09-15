@@ -12,7 +12,7 @@ if ($data['level'] == "admin") {
     $_SESSION['status'] = 'login';
     $_SESSION['username'] = $username;
     $_SESSION['level'] = "admin";
-    header("location:admin/index.php?data=table user");
+    header("location:admin/index.php?data=table-user");
 } else if ($data['level'] == "walas") {
     $_SESSION['status'] = 'login';
     $_SESSION['username'] = $username;

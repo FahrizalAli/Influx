@@ -18,7 +18,7 @@
   $login = mysqli_query($koneksi, "select * from t_user");
   $d = mysqli_fetch_array($login);
   if (isset($_GET['data'])) {
-    if ($_GET['data'] == 'table user') {
+    if ($_GET['data'] == 'table-user') {
       echo include 'table_user.php';
     } elseif ($_GET['data'] == 'table siswa') {
       echo include 'table_siswa.php';
